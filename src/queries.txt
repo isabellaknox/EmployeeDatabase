@@ -1,0 +1,25 @@
+#queries
+
+#inner joins (one to many)#############
+
+#address and associates
+SELECT city, first_name FROM addresses INNER JOIN associates ON associates.badge_id = addresses.badge_id
+
+#fun_facts and associates
+SELECT title, first_name FROM fun_facts INNER JOIN associates ON associates.badge_id = fun_facts.badge_id
+
+<<<<<<< HEAD
+#left join (many to many) ##############
+#events and associates 
+#shows all events that associate will attend
+SELECT * FROM events LEFT JOIN associates_events ON associates_events.event_id = events.event_id WHERE associates_events.badge_id = 'a665707'
+=======
+
+
+#left join (many to many) ##############
+#events and associates 
+#shows all events that associate will attend
+SELECT * FROM events LEFT JOIN associates_events ON associates_events.event_id = events.event_id WHERE associates_events.badge_id = 'a665707'
+
+
+>>>>>>> 8414ec40c6034b06e5a444ce222de67d2e199f2a
